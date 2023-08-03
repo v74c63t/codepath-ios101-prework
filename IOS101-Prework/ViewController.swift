@@ -31,9 +31,9 @@ class ViewController: UIViewController {
         let blue:CGFloat
         if self.redVal.text != "" || self.greenVal.text != "" || self.blueVal.text != "" {
             // check if the inputted values are floats
-            red = CGFloat(Float(self.redVal.text ?? "") ?? 0.0)
-            green = CGFloat(Float(self.greenVal.text ?? "") ?? 0.0)
-            blue = CGFloat(Float(self.blueVal.text ?? "") ?? 0.0)
+            red = CGFloat((Float(self.redVal.text ?? "") ?? 0.0)/255.0)
+            green = CGFloat((Float(self.greenVal.text ?? "") ?? 0.0)/255.0)
+            blue = CGFloat((Float(self.blueVal.text ?? "") ?? 0.0)/255.0)
             color = UIColor(red: red, green: green, blue: blue, alpha: 0.5)
         }
         else{
@@ -70,9 +70,9 @@ class ViewController: UIViewController {
         let blue:CGFloat
         if self.redVal.text != "" || self.greenVal.text != "" || self.blueVal.text != "" {
             // check if the inputted values are floats
-            red = CGFloat(Float(self.redVal.text ?? "") ?? 0.0)
-            green = CGFloat(Float(self.greenVal.text ?? "") ?? 0.0)
-            blue = CGFloat(Float(self.blueVal.text ?? "") ?? 0.0)
+            red = CGFloat((Float(self.redVal.text ?? "") ?? 0.0)/255.0)
+            green = CGFloat((Float(self.greenVal.text ?? "") ?? 0.0)/255.0)
+            blue = CGFloat((Float(self.blueVal.text ?? "") ?? 0.0)/255.0)
             color = UIColor(red: red, green: green, blue: blue, alpha: 0.5)
         }
         else{
