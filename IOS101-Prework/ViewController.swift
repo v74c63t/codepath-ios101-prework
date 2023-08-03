@@ -25,8 +25,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeBackgroundColor(_ sender: UIButton) {
-        let randomColor = changeColor()
-        view.backgroundColor = randomColor
+        let color:UIColor
+        let red:CGFloat
+        let green:CGFloat
+        let blue:CGFloat
+        if self.redVal.text != "" || self.greenVal.text != "" || self.blueVal.text != "" {
+            // check if the inputted values are floats
+            red = CGFloat(Float(self.redVal.text ?? "") ?? 0.0)
+            green = CGFloat(Float(self.greenVal.text ?? "") ?? 0.0)
+            blue = CGFloat(Float(self.blueVal.text ?? "") ?? 0.0)
+            color = UIColor(red: red, green: green, blue: blue, alpha: 0.5)
+        }
+        else{
+            color = changeColor()
+        }
+        view.backgroundColor = color
     }
     func changeColor() -> UIColor{
 
@@ -77,6 +90,9 @@ class ViewController: UIViewController {
         self.name.textColor = UIColor.black
         self.school.textColor = UIColor.black
         self.job.textColor = UIColor.black
+        self.redVal.text = ""
+        self.blueVal.text = ""
+        self.greenVal.text = ""
         bold = false;
         boldSwitch.isOn = false;
     }
