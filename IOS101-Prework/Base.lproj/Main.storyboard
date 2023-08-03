@@ -102,6 +102,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="boldSwitch" destination="3hj-nd-FPV" id="6jH-Ua-3XG"/>
                         <outlet property="job" destination="Thr-LK-4A9" id="Qnl-wS-syl"/>
                         <outlet property="name" destination="Ikj-Ry-d1s" id="LdX-em-YUn"/>
                         <outlet property="school" destination="HMt-Tx-hfs" id="Nj3-gO-7GL"/>

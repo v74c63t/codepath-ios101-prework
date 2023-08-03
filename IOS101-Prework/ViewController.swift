@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var job: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var school: UILabel!
+    @IBOutlet weak var boldSwitch: UISwitch!
     var bold:Bool = false;
     
     override func viewDidLoad() {
@@ -59,6 +60,8 @@ class ViewController: UIViewController {
         self.name.textColor = UIColor.black
         self.school.textColor = UIColor.black
         self.job.textColor = UIColor.black
+        bold = false;
+        boldSwitch.isOn = false;
     }
 }
 
