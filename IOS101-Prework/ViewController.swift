@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var job: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var school: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,8 +31,16 @@ class ViewController: UIViewController {
         return UIColor(red: red, green: green, blue: blue, alpha: 0.5)
     }
     
+    @IBAction func changeTextStyle(_ sender: UIButton) {
+        self.name.font = UIFont.boldSystemFont(ofSize: 17.0)
+        self.school.font = UIFont.boldSystemFont(ofSize: 17.0)
+        self.job.font = UIFont.boldSystemFont(ofSize: 17.0)
+    }
     @IBAction func reset(_ sender: UIButton) {
         view.backgroundColor = UIColor.white
+        self.name.font = UIFont(name: "Helvetica Neue", size: 17.0)
+        self.school.font = UIFont(name: "Helvetica Neue", size: 17.0)
+        self.job.font = UIFont(name: "Helvetica Neue", size: 17.0)
     }
 }
 
