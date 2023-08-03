@@ -5,6 +5,7 @@ Submitted by: **Vanessa Tang**
 **Name of your app** is an app that... [TODO] 
 
 Time spent: **X** hours spent in total
+so far 2-3 hrs
 
 ## Required Features
 
@@ -31,6 +32,8 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+- It was difficult getting used to the UI for Xcode. It was easy to forget where each feature was located.
 
 ## License
 
