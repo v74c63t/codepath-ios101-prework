@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var job: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var school: UILabel!
+    var bold:Bool = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,17 +31,34 @@ class ViewController: UIViewController {
 
         return UIColor(red: red, green: green, blue: blue, alpha: 0.5)
     }
-    
-    @IBAction func changeTextStyle(_ sender: UIButton) {
-        self.name.font = UIFont.boldSystemFont(ofSize: 17.0)
-        self.school.font = UIFont.boldSystemFont(ofSize: 17.0)
-        self.job.font = UIFont.boldSystemFont(ofSize: 17.0)
+    @IBAction func boldText(_ sender: Any) {
+        if !bold{
+            self.name.font = UIFont.boldSystemFont(ofSize: 17.0)
+            self.school.font = UIFont.boldSystemFont(ofSize: 17.0)
+            self.job.font = UIFont.boldSystemFont(ofSize: 17.0)
+            bold = true
+        }
+        else{
+            self.name.font = UIFont.systemFont(ofSize: 17.0)
+            self.school.font = UIFont.systemFont(ofSize: 17.0)
+            self.job.font = UIFont.systemFont(ofSize: 17.0)
+            bold = false
+        }
+    }
+    @IBAction func changeTextColor(_ sender: UIButton) {
+        let randomColor = changeColor()
+        self.name.textColor = randomColor
+        self.school.textColor = randomColor
+        self.job.textColor = randomColor
     }
     @IBAction func reset(_ sender: UIButton) {
         view.backgroundColor = UIColor.white
         self.name.font = UIFont(name: "Helvetica Neue", size: 17.0)
         self.school.font = UIFont(name: "Helvetica Neue", size: 17.0)
         self.job.font = UIFont(name: "Helvetica Neue", size: 17.0)
+        self.name.textColor = UIColor.black
+        self.school.textColor = UIColor.black
+        self.job.textColor = UIColor.black
     }
 }
 
