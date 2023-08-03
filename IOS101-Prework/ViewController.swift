@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var school: UILabel!
     @IBOutlet weak var boldSwitch: UISwitch!
+    
+    @IBOutlet weak var redVal: UITextField!
+    @IBOutlet weak var greenVal: UITextField!
+    @IBOutlet weak var blueVal: UITextField!
     var bold:Bool = false;
     
     override func viewDidLoad() {
@@ -47,10 +51,23 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func changeTextColor(_ sender: UIButton) {
-        let randomColor = changeColor()
-        self.name.textColor = randomColor
-        self.school.textColor = randomColor
-        self.job.textColor = randomColor
+        let color:UIColor
+        let red:CGFloat
+        let green:CGFloat
+        let blue:CGFloat
+        if self.redVal.text != "" || self.greenVal.text != "" || self.blueVal.text != "" {
+            // check if the inputted values are floats
+            red = CGFloat(Float(self.redVal.text ?? "") ?? 0.0)
+            green = CGFloat(Float(self.greenVal.text ?? "") ?? 0.0)
+            blue = CGFloat(Float(self.blueVal.text ?? "") ?? 0.0)
+            color = UIColor(red: red, green: green, blue: blue, alpha: 0.5)
+        }
+        else{
+            color = changeColor()
+        }
+        self.name.textColor = color
+        self.school.textColor = color
+        self.job.textColor = color
     }
     @IBAction func reset(_ sender: UIButton) {
         view.backgroundColor = UIColor.white

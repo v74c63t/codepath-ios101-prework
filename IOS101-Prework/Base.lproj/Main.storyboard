@@ -97,14 +97,35 @@
                                     <action selector="boldText:" destination="BYZ-38-t0r" eventType="valueChanged" id="e51-mo-fwt"/>
                                 </connections>
                             </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Green" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MmO-5e-wqd">
+                                <rect key="frame" x="167" y="324" width="67" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Blue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bk4-X1-965">
+                                <rect key="frame" x="258" y="324" width="57" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Red" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z5y-AT-43o">
+                                <rect key="frame" x="69" y="324" width="64" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="blueVal" destination="Bk4-X1-965" id="xEd-5v-ker"/>
                         <outlet property="boldSwitch" destination="3hj-nd-FPV" id="6jH-Ua-3XG"/>
+                        <outlet property="greenVal" destination="MmO-5e-wqd" id="yGN-Dz-egk"/>
                         <outlet property="job" destination="Thr-LK-4A9" id="Qnl-wS-syl"/>
                         <outlet property="name" destination="Ikj-Ry-d1s" id="LdX-em-YUn"/>
+                        <outlet property="redVal" destination="z5y-AT-43o" id="cOw-4D-eRK"/>
                         <outlet property="school" destination="HMt-Tx-hfs" id="Nj3-gO-7GL"/>
                     </connections>
                 </viewController>
