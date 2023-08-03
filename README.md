@@ -5,7 +5,7 @@ Submitted by: **Vanessa Tang**
 **Name of your app** is an app that... [TODO] 
 
 Time spent: **X** hours spent in total
-so far 2-3 hrs
+so far 4-5 hrs
 
 ## Required Features
 
