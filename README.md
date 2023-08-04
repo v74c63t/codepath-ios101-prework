@@ -4,7 +4,7 @@ Submitted by: **Vanessa Tang**
 
 **Name of your app** is an app that contains several options that can change the backgroup and text of the app. It contains a slider that can be toggled to bold or unbold the text and several buttons that have different function. Users can input specific RGB values (0-255) into the text fields to change the background or text to a specific color. However, users can also opt to leave the text fields blank and use the buttons to change the background or text to a random color. The reset buttons is used to reset everything back to normal by essentially disregarding all the changes that were made.
 
-Time spent: **7** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -28,6 +28,14 @@ GIF created with ...
 
 ## App Brainstorming (Step 4)
 
+### Favorite Applications
+
+- Messenger
+  - Changing the background color of a chat and the color of messages
+  - Adding emojis to certain keywords so if the word is sent emojis will pop up on the screen of the user
+   
+- 
+
 ## Notes
 
 Describe any challenges encountered while building the app.
@@ -36,7 +44,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Vanessa Tang]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
