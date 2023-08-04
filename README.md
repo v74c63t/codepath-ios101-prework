@@ -2,10 +2,9 @@
 
 Submitted by: **Vanessa Tang**
 
-**Name of your app** is an app that... [TODO] 
+**Name of your app** is an app that contains several options that can change the backgroup and text of the app. It contains a slider that can be toggled to bold or unbold the text and several buttons that have different function. Users can input specific RGB values (0-255) into the text fields to change the background or text to a specific color. However, users can also opt to leave the text fields blank and use the buttons to change the background or text to a random color. The reset buttons is used to reset everything back to normal by essentially disregarding all the changes that were made.
 
-Time spent: **X** hours spent in total
-so far 4-5 hrs
+Time spent: **7** hours spent in total
 
 ## Required Features
 
