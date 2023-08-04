@@ -2,7 +2,7 @@
 
 Submitted by: **Vanessa Tang**
 
-**Name of your app** is an app that contains several options that can change the backgroup and text of the app. It contains a slider that can be toggled to bold or unbold the text and several buttons that have different function. Users can input specific RGB values (0-255) into the text fields to change the background or text to a specific color. However, users can also opt to leave the text fields blank and use the buttons to change the background or text to a random color. The reset buttons is used to reset everything back to normal by essentially disregarding all the changes that were made.
+**Name of your app** is an app that contains several options that can change the backgroup and text of the app. It contains a slider that can be toggled to bold or unbold the text and several buttons that have different function. Users can input specific RGB values (0-255) into the text fields to change the background or text to a specific color. However, users can also opt to leave the text fields blank and use the buttons to change the background or text to a random color. The reset buttons is used to reset everything back to normal by essentially disgarding all the changes that were made.
 
 Time spent: **6-7** hours spent in total
 
@@ -35,6 +35,7 @@ GIF created with [Kap](https://getkap.co/)
   - Adding emojis to certain keywords so if the word is sent emojis will pop up on the screen of the user
    
 -  
+   -  
 
 ### App Idea
 
@@ -45,6 +46,7 @@ GIF created with [Kap](https://getkap.co/)
 Describe any challenges encountered while building the app.
 
 - It was difficult getting used to the UI for Xcode. It was easy to forget where each feature was located.
+- Although it's not really a challenge encountered when building the app, I had many issues with getting the gif to upload and work with github, so I ultimately uploaded a mp4 and just included the original gif into the repo.
 
 ## License
 
